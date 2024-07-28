@@ -13,5 +13,6 @@ O modelo precisar atingir um score na métrica F1 Score superior a 75%. Utilize 
 
 ## Visão Geral
 
-Utilizamos o S3 para armazenar os dados (que estão na pasta dados) e Amazon Comprehend para treinar um modelo de classificação NLP obtivemos um f1-Score de XX.XX%
-A pasta notebook possui o arquivo TratamentoDadosCategoriaReclamacao que trata os dados e faz a exportação para .csv para treinamento do modelo.
+- Utilizamos o S3 para armazenar os dados (que estão na pasta dados) e Amazon Comprehend para treinar um modelo de classificação NLP obtivemos um f1-Score de 89%.
+- A pasta notebook possui o arquivo TratamentoDadosCategoriaReclamacao que trata os dados e faz a exportação para .csv para treinamento do modelo.
+- A pasta resultado possui o output do dataframe de teste.
