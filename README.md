@@ -21,12 +21,14 @@ Utilizamos o S3 para armazenar os dados (que estão na pasta dados) e Amazon Com
 
 ### Dados
 
-Contem os dataframes de treino e teste
+Contem os dataframes de treino e teste.
+- Treino: tickets_reclamacoes_classificados_treino.csv
+- Teste: Com a categoria (tickets_reclamacoes_classificados_teste.csv) e sem categoria (tickets_reclamacoes_classificados_teste2.csv).
 
 ### Notebook
 
-Contem o arquivo TratamentoDadosCategoriaReclamacao que trata os dados e faz a exportação para .csv para treinamento do modelo.
+Contem o arquivo TratamentoDadosCategoriaReclamacao (nopass) que trata os dados e faz a exportação para .csv para treinamento do modelo.
 
 ### Resultado
 
-Contem o f1-score do modelo e output do dataframe de teste.
+Contem a imagem do f1-score do modelo e output (2) do dataframe de teste.
