@@ -14,30 +14,30 @@ O modelo precisar atingir um score na métrica F1 Score superior a 75%. Utilize 
 
 ## Visão Geral
 
-Utilizamos o S3 para armazenar os dados (que estão na pasta dados) e Amazon Comprehend para treinar um modelo de classificação NLP obtivemos um f1-Score de 89%. Depois criamos uma função Lambda e um endpoint no AWS para possibilitar a conexão via API onde utilizamos o StreamLit para realização de testes.
+Utilizamos o S3 para armazenar os dados (localizados na pasta "dados") e o Amazon Comprehend para treinar um modelo de classificação NLP, obtendo um F1 Score de 89%. Em seguida, criamos uma função Lambda e um endpoint na AWS para possibilitar a conexão via API, utilizando o StreamLit para a realização de testes.
 
 
 ## Pastas
 
 ### Dados
 
-Contem os dataframes de treino e teste.
+Contém os dataframes de treino e teste:
 - Treino: tickets_reclamacoes_classificados_treino.csv
 - Teste: Com a categoria (tickets_reclamacoes_classificados_teste.csv) e sem categoria (tickets_reclamacoes_classificados_teste2.csv).
 
 ### Notebook
 
-Contem o arquivo TratamentoDadosCategoriaReclamacao (nopass) que trata os dados e faz a exportação para .csv para treinamento do modelo.
+Contém o arquivo TratamentoDadosCategoriaReclamacao.ipynb que trata os dados e exporta para .csv para o treinamento do modelo.
 
 ### Resultado
 
-Contem a imagem do f1-score do modelo e output (2) do dataframe de teste.
+Contém a imagem do F1 Score do modelo e o output do dataframe de teste.
 
 ### AWS
 
-Contém o arquivo Lambda_Function.py que recebe uma chamada http (POST) e Retorna um Json com o resultado da análise do modelo.
+Contém o arquivo Lambda_Function.py que recebe uma chamada HTTP (POST) e retorna um JSON com o resultado da análise do modelo.
 
 ### StreamLit
 
-Contém o arquivo Classificar_Texto.py que cria o site pelo StreamLit.
+Contém o arquivo Classificar_Texto.py que cria o site utilizando o StreamLit.
 
