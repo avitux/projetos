@@ -14,7 +14,7 @@ O modelo precisar atingir um score na métrica F1 Score superior a 75%. Utilize 
 
 ## Visão Geral
 
-Utilizamos o S3 para armazenar os dados (que estão na pasta dados) e Amazon Comprehend para treinar um modelo de classificação NLP obtivemos um f1-Score de 89%.
+Utilizamos o S3 para armazenar os dados (que estão na pasta dados) e Amazon Comprehend para treinar um modelo de classificação NLP obtivemos um f1-Score de 89%. Depois criamos uma função Lambda e um endpoint no AWS para possibilitar a conexão via API onde utilizamos o StreamLit para realização de testes.
 
 
 ## Pastas
@@ -32,3 +32,12 @@ Contem o arquivo TratamentoDadosCategoriaReclamacao (nopass) que trata os dados 
 ### Resultado
 
 Contem a imagem do f1-score do modelo e output (2) do dataframe de teste.
+
+### AWS
+
+Contém o arquivo Lambda_Function.py que recebe uma chamada http (POST) e Retorna um Json com o resultado da análise do modelo.
+
+### StreamLit
+
+Contém o arquivo Classificar_Texto.py que cria o site pelo StreamLit.
+
